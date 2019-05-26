@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header><h1>Calories.com</h1></header> 
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="food_index.html">CALORIE INDEX</a></li>
+                <li><span>CALCULATOR</span></li>
+            </ul>
+        </nav>    
+        <main>
+            <article>
+            <h2>Calorie Calculator</h2>
+            <p>The <em>Calorie Calculator</em> can be used to estimate the number of calories a person needs to consume each day. This calculator can also provide some simple guidelines for gaining or losing weight. Use the "metric units" tab if the International System of Units (SI) is preferred.</p>
+            <p>This Calorie Calculator is based on several equations, and the results of the calculator are based on an estimated average.  Of all the equations, the Mifflin-St Jeor Equation is considered the most accurate equation for calculating BMR</p>
+            <p><strong>Mifflin-St Jeor Equation:</strong></p>
+            <p>For men:
+                    BMR = 10W + 6.25H - 5A + 5<br>
+               For women:
+                    BMR = 10W + 6.25H - 5A - 161</p>
+            <p>where:<br>
+                    W is body weight in kg<br>
+                    H is body height in cm<br>
+                    A is age
+            </p>
+            <form action="#" method="POST">
+                <h3>Male users</h3>
+                <div>
+                    <label for="Weight">Weight:</label>
+                    <input type="text" id="Weight" name="Weight">
+                </div>
+                <div>
+                    <label for="Height">Height:</label>
+                    <input type="text" id="Height" name="Height">
+                </div>
+                <div>
+                    <label for="Age">Age:</label>
+                    <input type="text" id="Age" name="Age">
+                </div>
+                <div>
+                    <button type="button" onclick="a();">Requirement</button>
+                    <input type="text" id="test1" name="Requirement">
+                </div>
+            </form>
+            <form action="#" method="POST">
+                <h3>Female users</h3>
+                <div>
+                    <label for="Weight">Weight:</label>
+                    <input type="text" id="Weight" name="Weight">
+                </div>
+                <div>
+                    <label for="Height">Height:</label>
+                    <input type="text" id="Height" name="Height">
+                </div>
+                <div>
+                    <label for="Age">Age:</label>
+                    <input type="text" id="Age" name="Age">
+                </div>
+                <div>
+                    <button type="button" onclick="b();">Requirement</button>
+                    <input type="text" id="test2" name="Requirement">
+                </div>
+            </form>
+            <hr>
+            <form action="#" method="POST">
+                <h3>Daily Calorie intake</h3>
+                <h3>Breakfast</h3>
+                <div>
+                    <select id="breakfast">
+                        <option value="Bread">Bread</option>
+                        <option value="Dosa">Dosa</option>
+                        <option value="Cornflakes">Cornflakes</option>
+                    </select>
+                </div>   
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="q1" name="breakfast-quantity">
+                </div>
+                <h3>Lunch</h3>
+                <div>
+                    <select id="lunch">
+                        <option value="Rice">Rice</option>
+                        <option value="Biriyani">Biriyani</option>
+                    </select>                
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="q2" name="lunch-quantity">
+                </div>
+                <div>
+                    <select id="sidedish1">
+                        <option value="Potato">Potato</option>
+                        <option value="Cauliflower">Cauliflower</option>
+                        <option value="Egg">Egg</option> 
+                    </select>                
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="q3" name="sidedish1-quantity">
+                </div>
+                <h3>Dinner</h3>
+                <div>
+                    <select id="dinner">
+                        <option value="Chapathi">Chapathi</option>
+                        <option value="Dosa">Dosa</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="q4" name="dinner-quantity">
+                </div>
+                <div>
+                    <select id="sidedish2">
+                        <option value="Paneer">Paneer</option>
+                        <option value="Dal">Dal</option>    
+                    </select>                
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="q5" name="sidedish2-quantity">
+                </div>
+                <div>
+                    <button type="button" onclick="calculate();">Intake</button>
+                    <input type="text" id="result" name="intake">            
+                </div>    
+            </form>    
+            <button type="button" onclick="save();">Save Results</button>
+            </article>
+        </main>
+        <footer>
+            <p>Developed by Tarun</p>
+        </footer>
+        
+        <script src="scripts/main.js"></script>
+    </body>    
+</html>
